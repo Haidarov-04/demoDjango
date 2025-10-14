@@ -1,7 +1,7 @@
 from django.db import models
 
 
-class category(models.model):
+class Category(models.Model):
     mark = models.CharField("mark", max_length=20)
     model = models.CharField("model", max_length=20)
     year = models.IntegerField("year")
