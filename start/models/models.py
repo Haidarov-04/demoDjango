@@ -5,6 +5,9 @@ class Category(models.Model):
     mark = models.CharField("mark", max_length=20)
     model = models.CharField("model", max_length=20)
     year = models.IntegerField("year")
+    color = models.CharField("color", max_length=20, null=True, blank=True)
+    engine = models.CharField("engine", max_length=20, null=True, blank=True)
+    body_car = models.CharField("body_car", max_length=20, null=True, blank=True)
 
 
     def __str__(self):
