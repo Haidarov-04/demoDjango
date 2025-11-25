@@ -3,8 +3,8 @@ from students.models import Students
 
 @admin.register(Students)
 class StudentsAdmin(admin.ModelAdmin):
-    list_display = ["name", "age", "phone", "mail"]
-    list_filter = ["name", "age", "phone", "mail"]
+    list_display = ["id", "name", "age", "phone"]
+    list_filter = ["id","name", "age", "phone"]
 
 
 
